@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Metadata -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator (DEA)</title>
+    <!-- Custom CSS Styles-->
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header class="mx-2 p-4 flex flex-col items-center justify-center">
+      <h1 class="text-3xl text-center font-bold">Calculator</h1>
+      <h2 class="text-2xl text-center font-bold">Driven-Event Architecture</h2>
+    </header>
+    <main class="mx-2 p-4 flex flex-col items-center justify-center gap-4">
+      <div
+        class="w-[320px] p-4 text-center bg-white rounded-md border-2 border-emerald-400">
+        <!-- Display -->
+        <input
+          type="text"
+          name="display"
+          id="display"
+          class="w-full p-4 mb-4 text-xl text-right bg-gray-200 border rounded-md"
+          placeholder="0"
+          readonly />
+        <!-- Buttons -->
+        <div class="grid grid-cols-4 gap-2">
+          <button
+            type="button"
+            id="clear"
+            name="clear"
+            class="text-center text-red-500 font-bold bg-gray-200 rounded-md hover:bg-gray-300">
+            C
+          </button>
+          <button
+            type="button"
+            id="open-parenthesis"
+            name="open-parenthesis"
+            data-value="("
+            class="text-center font-bold bg-gray-200 rounded-md hover:bg-gray-300">
+            (
+          </button>
+          <button
+            type="button"
+            id="close-parenthesis"
+            name="close-parenthesis"
+            data-value=")"
+            class="text-center font-bold bg-gray-200 rounded-md hover:bg-gray-300">
+            )
+          </button>
+          <button
+            type="button"
+            id="divide"
+            name="divide"
+            data-value="/"
+            class="text-center text-emerald-600 font-bold bg-gray-200 rounded-md hover:bg-gray-300">
+            /
+          </button>
+          <button
+            type="button"
+            id="seven"
+            name="seven"
+            data-value="7"
+            class="text-center font-bold bg-gray-200 rounded-md hover:bg-gray-300">
+            7
+          </button>
+          <button
+            type="button"
+            id="eight"
+            name="eight"
+            data-value="8"
+            class="text-center font-bold bg-gray-200 rounded-md hover:bg-gray-300">
+            8
+          </button>
+          <button
+            type="button"
+            id="nine"
+            name="nine"
+            data-value="9"
+            class="text-center font-bold bg-gray-200 rounded-md hover:bg-gray-300">
+            9
+          </button>
+          <button
+            type="button"
+            id="multiply"
+            name="multiply"
+            data-value="*"
+            class="text-center text-emerald-600 font-bold bg-gray-200 rounded-md hover:bg-gray-300">
+            *
+          </button>
+          <button
+            type="button"
+            id="four"
+            name="four"
+            data-value="4"
+            class="text-center font-bold bg-gray-200 rounded-md hover:bg-gray-300">
+            4
+          </button>
+          <button
+            type="button"
+            id="five"
+            name="five"
+            data-value="5"
+            class="text-center font-bold bg-gray-200 rounded-md hover:bg-gray-300">
+            5
+          </button>
+          <button
+            type="button"
+            id="six"
+            name="six"
+            data-value="6"
+            class="text-center font-bold bg-gray-200 rounded-md hover:bg-gray-300">
+            6
+          </button>
+          <button
+            type="button"
+            id="subtract"
+            name="subtract"
+            data-value="-"
+            class="text-center text-emerald-600 font-bold bg-gray-200 rounded-md hover:bg-gray-300">
+            -
+          </button>
+          <button
+            type="button"
+            id="one"
+            name="one"
+            data-value="1"
+            class="text-center font-bold bg-gray-200 rounded-md hover:bg-gray-300">
+            1
+          </button>
+          <button
+            type="button"
+            id="two"
+            name="two"
+            data-value="2"
+            class="text-center font-bold bg-gray-200 rounded-md hover:bg-gray-300">
+            2
+          </button>
+          <button
+            type="button"
+            id="three"
+            name="three"
+            data-value="3"
+            class="text-center font-bold bg-gray-200 rounded-md hover:bg-gray-300">
+            3
+          </button>
+          <button
+            type="button"
+            id="add"
+            name="add"
+            data-value="+"
+            class="text-center text-emerald-600 font-bold bg-gray-200 rounded-md hover:bg-gray-300">
+            +
+          </button>
+          <button
+            type="button"
+            id="zero"
+            name="zero"
+            data-value="0"
+            class="text-center font-bold bg-gray-200 rounded-md hover:bg-gray-300">
+            0
+          </button>
+          <button
+            type="button"
+            id="decimal"
+            name="decimal"
+            data-value="."
+            class="text-center font-bold bg-gray-200 rounded-md hover:bg-gray-300">
+            .
+          </button>
+          <button
+            type="button"
+            id="equals"
+            name="equals"
+            class="text-center text-emerald-600 font-bold bg-gray-200 rounded-md hover:bg-gray-300">
+            =
+          </button>
+        </div>
+        <!-- For the sake of God. A calculator is supposed to be something simple. -->
+        <!-- Then what happens with this ridiculous amount of buttons? -->
+        <!-- Why do I have to complicate my life like this? -->
+        <!-- It's because I'm a woman? :( -->
+      </div>
+    </main>
+    <!-- Custom JS Scripts -->
+    <script src="../js/dea.js"></script>
+  </body>
+</html>
