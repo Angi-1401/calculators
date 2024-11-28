@@ -49,7 +49,6 @@ class Calculator {
     return a / b;
   }
 
-  /*************  ✨ Codeium Command ⭐  *************/
   /**
    * Performs an operation on two numbers based on the provided operator.
    *
@@ -58,7 +57,6 @@ class Calculator {
    * @param {number} b - The second operand.
    * @returns {number|string} The result of the operation, or a string if division by zero is attempted.
    */
-  /******  f8ca2f29-2607-444e-9b58-2bec8d114843  *******/
   operate(operator, a, b) {
     switch (operator) {
       case "+":
